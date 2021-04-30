@@ -1,0 +1,19 @@
+body{
+background: url("jue.png") fixed no-repeat;
+background-size: cover;
+		}
+.j{
+    position: absolute;
+    top: 30px;
+    left: 45.5%;
+    font-size: 50px;
+    color: white;
+}
+
+.s{
+    position: absolute;
+    top: 307px;
+    left: 45%;
+    font-size: 50px;
+    color: white;
+}

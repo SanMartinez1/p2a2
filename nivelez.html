@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	        <link rel="stylesheet" type="text/css" href="ni.css">
+	<style type="text/css">
+		.inicio{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: green;
+		}
+		.c{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 20px;
+			background: url('k.png');
+			background-size: cover;
+			border-style: solid;
+			border-color: black;
+			box-shadow: 10px 10px 10px black;
+		}
+		.c:hover{background: url('k1.png');
+	background-size: cover;}
+		.kdsa{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 120px;
+			height: 100px;
+			background-color: blue;
+			color: #FFFFFF;
+			font-size: 25px;
+			transition: 0.5s;
+		}
+				.kdsa1{
+			position: absolute;
+			top: 0px;
+			left: 1250px;
+			width: 116px;
+			height: 100px;
+			background-color: lightblue;
+			color: #000000;
+			font-size: 25px;
+		}
+		.conte{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+            width: 100%;
+            height: 100%;
+            background: url('Fondok.png') fixed no-repeat;
+			background-size: cover;
+			text-align: center;
+            display: none;
+            color: black;
+            font-size: 50px;
+            animation: dsaasadafsda;
+            animation-duration: 0.2s;
+            animation-iteration-count: 1; 
+		}
+		@keyframes dsaasadafsda{
+        0%{width: 10%; height: 10%}
+        100%{width: 100%; height: 100%}
+		}
+		.re{
+			position: absolute;
+			top: 10px;
+			left: 550px;
+			font-size: 50px;
+			border-radius: 10px;
+			background: linear-gradient(to bottom, lightblue 0%, blue 100%);
+			box-shadow: 10px 10px 10px black;
+		}
+		.re:hover{background: linear-gradient(to bottom, blue 0%, lightblue 100%)}
+		.nomesalgo{
+			position: absolute;
+			top: 150px;
+			left: 200px;
+			width: 920px;
+			height: 500px;
+			background-color: yellow;
+			z-index: -243243242;
+			border-style: solid;
+			border-color: black;
+			border-radius: 20px;
+			opacity: 0.8;
+		}
+			.dif{
+			position: absolute;
+			top: 300px;
+			left: 550px;
+			font-size: 50px;
+			border-radius: 10px;
+			background: linear-gradient(to bottom, lightyellow 0%, yellow 100%);
+			box-shadow: 10px 10px 10px black;
+		}
+		.dif:hover{background: linear-gradient(to bottom, yellow 0%, lightyellow 100%)}
+			.ez{
+			position: absolute;
+			top: 300px;
+			left: 250px;
+			font-size: 50px;
+			border-radius: 10px;
+			background: linear-gradient(to bottom, lightblue 0%, blue 100%);
+			box-shadow: 10px 10px 10px black;
+		}
+		.ez:hover{background: linear-gradient(to bottom, blue 0%, lightblue 100%)}
+	</style>
+	<script type="text/javascript">
+		var apuntos=0;
+				var s = 60;
+	</script>
+		<audio src="gourmetrace.mp3" preload loop id="home"></audio>
+</head>
+<body onload="tiemp()">
+	<div class="emergente">
+	<div class="kdsa" id="asd" ><br>Puntos: </div>
+		<div class="kdsa1" id="asd1" ><br>Tiempo: </div>
+	<div class="c" onclick="repe()"></div>
+	<div class="conte" id="ads"><br><br><br>Tus Puntos Totales Son:</div>
+	<div class="re" onclick="res()">Reiniciar</div>
+	<div class="nomesalgo" onclick="err()" onmouseover="document.getElementById('home').play();
+"></div>
+<script type="text/javascript">
+	vec=[];
+	var g = vec.length;
+		var mayor
+		setInterval(err,2000);
+			document.querySelector(".c").style.transition=0.5+"s";
+	var x = Math.floor(Math.random() * ((810+210) - 210) + 210);
+	var y = Math.floor(Math.random() * ((380+160) - 160) + 160);
+	document.querySelector(".c").style.left=x+"px";
+	document.querySelector(".c").style.top=y+"px";
+	console.log(x,y);
+	function repe(){
+	var x = Math.floor(Math.random() * ((750+210) - 210) + 210);
+	var y = Math.floor(Math.random() * ((330+160) - 160) + 160);
+		var t = Math.floor(Math.random() * ((3+1) - 1) + 1);
+	var pun = document.getElementById('asd')
+	document.querySelector(".c").style.left=x+"px";
+	document.querySelector(".c").style.top=y+"px";
+    console.log(puntos);
+    						var suma = 0;
+        vec.forEach (function(numero){
+        suma += numero;
+    });
+
+    if (t==1) {
+    document.querySelector(".c").style.width=50+"px";
+	document.querySelector(".c").style.height=50+"px";
+	document.querySelector(".c").style.transition=0.5+"s";
+	var puntos1=apuntos+20;	
+	    vec.push(puntos1);
+	            setTimeout(err,2000);
+    }
+        if (t==2) {
+    document.querySelector(".c").style.width=100+"px";
+	document.querySelector(".c").style.height=100+"px";
+		document.querySelector(".c").style.transition=0.5+"s";
+	    var puntos = apuntos+10;
+	        vec.push(puntos);
+	                 setTimeout(err,2000);
+    }
+        if (t==3) {
+    document.querySelector(".c").style.width=150+"px";
+	document.querySelector(".c").style.height=150+"px";	
+		document.querySelector(".c").style.transition=0.5+"s";
+		    var puntos2 = apuntos+5;
+	        vec.push(puntos2);
+	                  setTimeout(err,2000);
+    }
+    							var dor = Math.floor(Math.random() * ((10+1) - 1) + 1);
+        if (dor==3) {
+    document.querySelector(".c").style.width=20+"px";
+	document.querySelector(".c").style.height=20+"px";	
+		document.querySelector(".c").style.transition=0.5+"s";
+		    var puntos3 = apuntos+100;
+	        vec.push(puntos3);
+	         setTimeout(err,2000);
+    }
+        asd.innerHTML = '<br> Puntos: '+ suma;
+	}
+	function err(){
+	var x = Math.floor(Math.random() * ((750+210) - 210) + 210);
+	var y = Math.floor(Math.random() * ((330+160) - 160) + 160);
+		var t = Math.floor(Math.random() * ((3+1) - 1) + 1);
+	var pun = document.getElementById('asd')
+	document.querySelector(".c").style.left=x+"px";
+	document.querySelector(".c").style.top=y+"px";
+    console.log(puntos);
+    						var suma = 0;
+        vec.forEach (function(numero){
+        suma += numero;
+    });
+
+    if (t==1) {
+    document.querySelector(".c").style.width=50+"px";
+	document.querySelector(".c").style.height=50+"px";
+	document.querySelector(".c").style.transition=0.5+"s";
+    }
+        if (t==2) {
+    document.querySelector(".c").style.width=100+"px";
+	document.querySelector(".c").style.height=100+"px";
+		document.querySelector(".c").style.transition=0.5+"s";
+    }
+        if (t==3) {
+    document.querySelector(".c").style.width=150+"px";
+	document.querySelector(".c").style.height=150+"px";	
+		document.querySelector(".c").style.transition=0.5+"s";
+    }
+    							var dor = Math.floor(Math.random() * ((10+1) - 1) + 1);
+        if (dor==3) {
+    document.querySelector(".c").style.width=20+"px";
+	document.querySelector(".c").style.height=20+"px";	
+		document.querySelector(".c").style.transition=0.5+"s";	
+    }
+        asd.innerHTML = '<br> Puntos: '+ suma;
+	}
+	function tiemp(){
+		afa=setInterval(contar,1000);
+	}
+	function contar(){
+		s=s-1;
+		asd1.innerHTML = '<br> Tiempo:' + s;
+
+		if (s==0) {
+						var suma = 0;
+			clearInterval(afa);
+			document.querySelector(".conte").style.display="block";
+			g = vec.length;
+			    vec.pop();
+    vec.forEach (function(numero){
+        suma += numero;
+    });
+    console.log(suma);
+    			ads.innerHTML = '<br><br> Tus Puntos Totales Son:' + suma;
+		}
+	}
+</script>
+<script type="text/javascript">
+	function res(){
+		window.location.href = "index.html"
+	}
+</script>
+</body>
+</html>
